@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="header-content">
+        <h1>Task 3: Interactive Challenge</h1> 
+      </div>
+    </header>
+
+    <div id="quiz-box">
+      <h2 id="question">Loading Question...</h2>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Next Question</button>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h3 id="score">Your Score: 0 / 8</h3>
+      <div class="result-actions">
+        <button id="show-quote-btn">Show Motivation</button>
+        <button id="reset-btn" type="button">Try Again!</button>
+      </div>
+    </div>
+
+    <div id="quote-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>A Little Encouragement!</h3>
+        <p id="quote-text">Fetching deep thoughts...</p>
+        <button id="close-modal">Got It</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 ApexPlanet Projects | Task 3</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

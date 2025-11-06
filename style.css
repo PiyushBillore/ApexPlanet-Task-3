@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376); 
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  /* Changed to space-between to push the header and footer to the edges */
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* --- Header Styling --- */
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark header */
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 90%;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #90ee90; /* A contrasting light color (Light Green) for the title */
+}
+
+/* --- Core Quiz Styling --- */
+#quiz-box, #result-box {
+  background: white;
+  color: #333; 
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 450px; 
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  /* Added margin to separate from header/footer */
+  margin: 20px 0; 
+}
+
+
+.option {
+  background: #f0f0f0;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  font-weight: 500;
+  text-align: left;
+}
+
+.option:hover {
+  background: #e5e5e5;
+  transform: translateY(-2px); 
+}
+
+.correct {
+  background: #4caf50 !important; 
+  color: white;
+}
+
+.wrong {
+  background: #f44336 !important;
+  color: white;
+}
+
+
+button {
+  background: #4e4376;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2b5876;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  color: #333;
+  padding: 40px;
+  border-radius: 15px;
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* --- Footer Styling --- */
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark footer */
+  color: #ccc; 
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  #quiz-box, #result-box {
+    padding: 20px;
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+}
